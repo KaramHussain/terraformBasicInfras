@@ -51,12 +51,12 @@ The infrastructure follows a modular approach, with clear separation of concerns
 
 1.  **Clone:** 
     ```bash
-    git clone [https://github.com/](https://github.com/)<your-username>/basic-infra.git
+    git clone https://github.com/KaramHussain/terraformBasicInfras.git
     ```
 
 2.  **Initialize:**
     ```bash
-    cd basic-infra
+    cd terraformBasicInfras
     terraform init
     ```
 
@@ -74,7 +74,7 @@ The infrastructure follows a modular approach, with clear separation of concerns
     ```
 
 ## Project Structure
-[![Architecture Diagram](infrastructure-diagram.png)](infrastructure-diagram.png)
+[![Architecture Diagram](folderstructure.png)](folderstructure.png)
 
 ## Modules
 
