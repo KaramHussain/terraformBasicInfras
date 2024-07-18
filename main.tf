@@ -3,8 +3,15 @@ provider "aws" {
 }
 
 module "vpc" {
-  source = "./networking"
+  source = "./modules/networking"
 }
-output "vpcid_output" {
-  value = module.vpc.vpc_id
+
+
+module "compute" {
+  source = "./modules/compute"
+  vpc_id = module.vpc.vpc_id
+  NI_ID  = module.vpc.nginx_NI_ID
 }
+
+
+
